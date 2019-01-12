@@ -59,3 +59,5 @@ function volunteers() {
         'What times are you available? [Sunday]': 'Morning, Midday, Afternoon',
         'Please submit your cover letter or resume': '' } ]
 }
+
+export default volunteers;
