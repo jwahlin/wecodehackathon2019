@@ -6,6 +6,8 @@ We are Sheila, Colleen, Tonja, Jamie and Becca
 
 # Match volunteers with available opportunities for IRCO
 
+(https://docs.google.com/presentation/d/1aLd8A-L9Rqj80GUzH1gbHnPEVgauDx0dXamYIimRtWw/edit#slide=id.p)
+
 # About our app
 
 The brainchild for our project was from one of our team member's attempts to enroll as a volunteer in the existing Volunteer site - (https://irco.org/support/volunteer.html)
