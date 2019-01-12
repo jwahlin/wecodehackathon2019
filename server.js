@@ -42,10 +42,19 @@ app.listen(port, () => console.log(`Listening on port ${port}`));
 function filterVolunteerOpps() {
   // TODO: Get volunteer profile, parse CSV
   // TODO: Filter volunteer opportunities by volunteer profile
+
+  var matches = []
   csv
-  .fromPath("fake-volunteer-opps.csv")
+  .fromPath("fake-volunteer-opps.csv", {headers : true})
   .on("data", function(data){
       console.log(data);
+
+      var i;
+      for ( i = 0; i<data.length; i++ ) {
+        // Filter by background check
+        
+        
+      }
   })
   .on("end", function(){
       console.log("done");
