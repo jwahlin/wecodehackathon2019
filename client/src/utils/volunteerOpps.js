@@ -47,3 +47,4 @@ function volunteerOpps() {
         'Do you have a car?': 'No' } ]
 }
 
+export default volunteerOpps;

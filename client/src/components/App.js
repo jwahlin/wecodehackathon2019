@@ -1,16 +1,23 @@
 import React, { Component } from 'react';
 import '../styles/App.css';
 import ListItem from './ListItem.js';
+import volunteerOpps from '../utils/volunteerOpps';
 
 class App extends Component {
-  state = {
-    list: '',
-    post: '',
-    responseToPost: ''
-  };
+  constructor(props) {
+    super(props)
+    this.state = {
+        opps: [],
+        list: '',
+        post: '',
+        responseToPost: ''
+      }
+  }
 
   componentDidMount() {
     this.updateTodoList();
+
+    this.setState({ opps: volunteerOpps() })
   }
 
   updateTodoList() {
@@ -27,6 +34,18 @@ class App extends Component {
 
     return body;
   };
+
+  listOpps = () => {
+    let listOpps = []
+    for (let i = 0; i < this.state.opps.length; i++) {
+        let currentOpp = this.state.opps[i]
+        listOpps.push(<ListItem
+            opp={currentOpp}
+        />)
+    }
+
+    return listOpps;
+}
 
   handleSubmit = async e => {
     e.preventDefault();
@@ -51,10 +70,7 @@ class App extends Component {
           <h1>To Do List</h1>
         </header>
         <ul className="to-do-list">
-       {this.state.list.length > 0 && this.state.list.map((listItem, index) => (
-          <ListItem text={listItem} />
-        ))}
-          
+        {this.listOpps()}
         </ul>
         <form onSubmit={this.handleSubmit}>
           <p>
