@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
-var csv = require("fast-csv");
+const csvToArray = require('./utils/csvParser');
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -43,30 +43,28 @@ function filterVolunteerOpps() {
   // TODO: Get volunteer profile, parse CSV
   // TODO: Filter volunteer opportunities by volunteer profile
 
-  var matches = []
-  csv
-  .fromPath("fake-volunteer-opps.csv", {headers : true})
-  .on("data", function(data){
-     // console.log(data);
-      
-     
-     
-        // Filter by background check
-        // If Volunteer cannot pass background check only show opps that don't require background check.
-        console.log(data['Does it require a background check?'])
+  // TODO: goal create function that returns array of objects when given a csv
+
+  // var matches = []
+  // csv
+  // .fromPath("fake-volunteer-opps.csv", {headers : true})
+  // .on("data", function(data){
         
-      if("No" == data['Does it require a background check?']) {
-        matches.push(data)
-      }
+  //   // If Volunteer cannot pass background check only show opps that don't require background check.
+
+  //   // Filter by background check
+  //   if("No" == data['Does it require a background check?']) {
+  //     matches.push(data)
+  //   }
 
 
     
-  })
-  .on("end", function(){
-      console.log("done");
-      console.log(matches)
+  // })
+  // .on("end", function(){
+  //     console.log("done");
+  //     console.log(matches)
 
-  });
+  // });
   
   // Return volunteer opportunities or a message/error if no matches
 }
