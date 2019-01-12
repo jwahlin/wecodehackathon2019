@@ -25,16 +25,9 @@ export default class ListItem extends React.Component {
     const labelClass = this.state.completed ? 'item done' : 'item';
 
     return (
-      <li>
-        <label className={labelClass}>{this.props.text}
-          <input
-            style={{ marginLeft: '14px' }}
-            name="completed"
-            type="checkbox"
-            checked={this.state.completed}
-            onChange={this.handleInputChange} />
-        </label>
-      </li>
+      <div>
+        <h2>{this.props.opp['Name of the position']}</h2>
+      </div>
       )
     }
 }

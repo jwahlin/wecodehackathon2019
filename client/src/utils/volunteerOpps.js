@@ -1,0 +1,50 @@
+
+function volunteerOpps() {
+    return [ {
+        'Timestamp': '1/12/2019 11:55:18',
+        'Name of the position': 'Photography Volunteer',
+        'What program area is this position in?': 'Administration',
+        'Where is this opportunity located?': 'Main Office; 97220',
+        'Does it involve working with kids?': 'Maybe',
+        'Does it require a background check?': 'No',
+        'When is the volunteer needed? [Monday]': '',
+        'When is the volunteer needed? [Tuesday]': '',
+        'When is the volunteer needed? [Wednesday]': '',
+        'When is the volunteer needed? [Thursday]': '',
+        'When is the volunteer needed? [Friday]': '',
+        'When is the volunteer needed? [Saturday]': 'Morning, Midday, Afternoon, Evening',
+        'When is the volunteer needed? [Sunday]': 'Morning, Midday, Afternoon, Evening',
+        'Do you have a car?': 'Yes' },
+    {
+        'Timestamp': '1/12/2019 11:55:48',
+        'Name of the position': 'Tutor/Homework help',
+        'What program area is this position in?': 'Youth',
+        'Where is this opportunity located?': 'Africa House; 97220',
+        'Does it involve working with kids?': 'Yes',
+        'Does it require a background check?': 'Yes',
+        'When is the volunteer needed? [Monday]': 'Afternoon',
+        'When is the volunteer needed? [Tuesday]': 'Afternoon',
+        'When is the volunteer needed? [Wednesday]': 'Afternoon',
+        'When is the volunteer needed? [Thursday]': 'Afternoon',
+        'When is the volunteer needed? [Friday]': 'Afternoon, Evening',
+        'When is the volunteer needed? [Saturday]': 'Flexible',
+        'When is the volunteer needed? [Sunday]': 'Flexible',
+        'Do you have a car?': 'Yes' },
+    {
+        'Timestamp': '1/12/2019 11:57:09',
+        'Name of the position': 'HR Specialist',
+        'What program area is this position in?': 'Employment and Training Services',
+        'Where is this opportunity located?': 'Asian Family Center; 97213',
+        'Does it involve working with kids?': 'No',
+        'Does it require a background check?': 'No',
+        'When is the volunteer needed? [Monday]': '',
+        'When is the volunteer needed? [Tuesday]': 'Evening',
+        'When is the volunteer needed? [Wednesday]': 'Evening',
+        'When is the volunteer needed? [Thursday]': 'Evening',
+        'When is the volunteer needed? [Friday]': 'Flexible',
+        'When is the volunteer needed? [Saturday]': '',
+        'When is the volunteer needed? [Sunday]': '',
+        'Do you have a car?': 'No' } ]
+}
+
+export default volunteerOpps;
