@@ -1,4 +1,4 @@
-# WE CODE 2019 Team 1 - Volunteer intake for IRCO
+# WE CODE 2019 Team 1 - Match volunteers with available opportunities for IRCO
 
 # About our team
 
