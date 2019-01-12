@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import './ListItem.css';
+import React from 'react';
+import '../styles/ListItem.css';
 
 export default class ListItem extends React.Component {
 
