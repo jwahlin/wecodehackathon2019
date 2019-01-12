@@ -23,3 +23,23 @@ We started with designing two Google forms:
 (https://docs.google.com/forms/d/e/1FAIpQLSecITBTJwdP6395BYvlu7ubWQTZKnQP_QPJ4YwdS-da34vb1Q/viewform)
 
 
+Next, we designed a function to read the volunteer details and match them with the available opportunities based on:
+
+1) Does the volunteer match basic requirements like being able to pass a background check, or owning a car.
+2) Does the volunteer live or work close enough to the available volunteer opportunity?
+
+This code is located in the updated server.js file.
+
+The final result is an updated app.js that renders a web page to the potential volunteer a list of matched opportunities based on their input.
+
+# Next steps
+
+With a single day of programming time,  we've created the updated functions and google docs as a Proof of Concept.  The next steps include:
+
+Update the server.js to read directly from the google forms instead of demo data used to mock up the app
+Update the app.js to control the rendering of the google forms and perform a live lookup in the volunteer opportunities dataset with actual data
+Load the data from the UI to and from an open-source database to securely store the information from volunteer candidates
+
+
+
+
