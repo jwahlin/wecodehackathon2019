@@ -55,3 +55,33 @@ function filterVolunteerOpps() {
   // Return volunteer opportunities or a message/error if no matches
 }
 filterVolunteerOpps()
+
+function filterVolunteerDist(volZipIn,oppZipIn,maxDistIn) {
+  // TODO: Compare volunteer opportunity to volunteer location for filtering
+  var zipcodes = require('zipcodes');
+
+  //var maxDist = 10;
+  //var volZip = 97229;
+  //var oppZip = 97214;
+  var volZip = volZipIn;
+  var oppZip = oppZipIn;
+  var maxDist = maxDistIn;
+
+  var distOK = new Boolean(false);
+
+  var dist = zipcodes.distance(volZip, oppZip); //In Miles
+    //  console.log("Distance between Volunteer and Opportunity = "||dist);
+     
+      console.log("Distance between volunteer and location =  ");
+      console.log(dist);
+
+      
+      distOK = dist <= maxDist;
+      console.log("Is distance within volunteer radius ?");
+      console.log(distOK);
+
+
+  // Return true/false if volunteer in range of opp
+  return distOK;
+};
+filterVolunteerDist()
