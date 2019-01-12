@@ -42,16 +42,32 @@ app.listen(port, () => console.log(`Listening on port ${port}`));
 function filterVolunteerOpps() {
   // TODO: Get volunteer profile, parse CSV
   // TODO: Filter volunteer opportunities by volunteer profile
+
+  var matches = []
   csv
-  .fromPath("fake-volunteer-opps.csv")
+  .fromPath("fake-volunteer-opps.csv", {headers : true})
   .on("data", function(data){
-      console.log(data);
+     // console.log(data);
+      
+     
+     
+        // Filter by background check
+        // If Volunteer cannot pass background check only show opps that don't require background check.
+        console.log(data['Does it require a background check?'])
+        
+      if("No" == data['Does it require a background check?']) {
+        matches.push(data)
+      }
+
+
+    
   })
   .on("end", function(){
       console.log("done");
+      console.log(matches)
+
   });
-
-
+  
   // Return volunteer opportunities or a message/error if no matches
 }
 filterVolunteerOpps()
