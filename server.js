@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
+var csv = require("fast-csv");
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -37,3 +38,20 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
+
+function filterVolunteerOpps() {
+  // TODO: Get volunteer profile, parse CSV
+  // TODO: Filter volunteer opportunities by volunteer profile
+  csv
+  .fromPath("fake-volunteer-opps.csv")
+  .on("data", function(data){
+      console.log(data);
+  })
+  .on("end", function(){
+      console.log("done");
+  });
+
+
+  // Return volunteer opportunities or a message/error if no matches
+}
+filterVolunteerOpps()
