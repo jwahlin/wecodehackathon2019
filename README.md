@@ -36,9 +36,11 @@ The final result is an updated app.js that renders a web page to the potential v
 
 With a single day of programming time,  we've created the updated functions and google docs as a Proof of Concept.  The next steps include:
 
-Update the server.js to read directly from the google forms instead of demo data used to mock up the app
-Update the app.js to control the rendering of the google forms and perform a live lookup in the volunteer opportunities dataset with actual data
-Load the data from the UI to and from an open-source database to securely store the information from volunteer candidates
+1) Update the server.js to read directly from the google forms instead of demo data used to mock up the app
+
+2) Update the app.js to control the rendering of the google forms and perform a live lookup in the volunteer opportunities dataset with actual data
+
+3) Load the data from the UI to and from an open-source database to securely store the information from volunteer candidates
 
 
 
